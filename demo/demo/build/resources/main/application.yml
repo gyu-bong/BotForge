@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: BotForg
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/BotForge   # 데이터베이스 URL을 실제 DB 이름으로 변경
+    username: root                        # 데이터베이스 사용자명
+    password: 1234                        # 데이터베이스 비밀번호
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update                              # 데이터베이스 스키마 자동 업데이트
+    show-sql: true                                  # 실행된 SQL 쿼리를 로그에 표시
